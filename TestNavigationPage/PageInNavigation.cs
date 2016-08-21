@@ -65,7 +65,53 @@ namespace TestNavigationPage
 				}
 			};
 
-			StackLayout sl = new StackLayout{Children = {l, bNext, bPrev, bJumpToRoot, bNextAsModal, bLogin},  Padding = new Thickness(20,20,20,20) };
+			// Set nav bar
+			Label lHasNavBar = new Label { Text = "Has nav bar",
+			VerticalTextAlignment = TextAlignment.End};
+			Switch switchHasNavBar = new Switch { IsToggled = true, HorizontalOptions = LayoutOptions.StartAndExpand};
+			switchHasNavBar.Toggled += (sender, e) => { 
+				NavigationPage.SetHasNavigationBar(this, e.Value);
+			};
+			StackLayout slHasNavBar = new StackLayout { 
+				Orientation = StackOrientation.Horizontal,
+				Children = {
+					lHasNavBar,
+					switchHasNavBar
+				}
+			};
+
+			// Set back button
+			Label lHasBackButton = new Label
+			{
+				Text = "Has back button",
+				VerticalTextAlignment = TextAlignment.End
+			};
+			Switch switchHasBackButton = new Switch { IsToggled = true, HorizontalOptions = LayoutOptions.StartAndExpand };
+			switchHasBackButton.Toggled += (sender, e) => { 
+				NavigationPage.SetHasBackButton(this, e.Value);
+			};
+			StackLayout slHasBackButton = new StackLayout {
+				Orientation = StackOrientation.Horizontal,
+				Children = {
+					lHasBackButton,
+					switchHasBackButton
+				}
+			};
+
+
+
+			StackLayout sl = new StackLayout{
+				Children = {
+					l, 
+					bNext,
+					bPrev,
+					bJumpToRoot,
+					bNextAsModal,
+					bLogin,
+					slHasNavBar,
+					slHasBackButton},  
+				Padding = new Thickness(20,20,20,20) };
+			
 			Content = sl;
 		}
 			
