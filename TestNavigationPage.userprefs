@@ -1,0 +1,18 @@
+﻿<Properties StartupItem="Droid/TestNavigationPage.Droid.csproj" RefactoringSettings.EnableRefactorings="True">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.SKBUOVTGWC5SWS7D" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="TestNavigationPage/TestNavigationPage.cs">
+    <Files>
+      <File FileName="TestNavigationPage/PageLogin.cs" Line="20" Column="3" />
+      <File FileName="TestNavigationPage/TestNavigationPage.cs" Line="19" Column="40" />
+      <File FileName="TestNavigationPage/PageInNavigation.cs" Line="27" Column="6" />
+      <File FileName="iOS/Main.cs" Line="1" Column="1" />
+      <File FileName="iOS/AppDelegate.cs" Line="19" Column="1" />
+      <File FileName="Droid/MainActivity.cs" Line="1" Column="1" />
+      <File FileName="TestNavigationPage/packages.config" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
